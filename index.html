@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,131 @@
     <title>Document</title>
     <link rel="stylesheet" href="./public/css/app.css">
 </head>
+
 <body>
+    <!-- **left section -->
+    <section class="left">
+        <div class="logo">
+            <h1>Todo List</h1>
+        </div>
+        <div class="tache">
+            <div class="icons">
+                <i class="fa-solid fa-house text-dark opacity-50"></i>
+                <h5>Mes Taches</h5>
+            </div>
+            <p>10</p>
+
+        </div>
+        <div class="tache">
+            <div class="icons">
+                <i class="fa-regular fa-star text-warning"></i>
+                <h5>Favorite</h5>
+            </div>
+            <p>10</p>
+
+        </div>
+        <div class="tache ">
+            <div class="icons">
+                <i class="fa-regular fa-square-check text-success"></i>
+                <h5>Checked</h5>
+            </div>
+            <p>10</p>
+
+        </div>
+        <div class="tache">
+            <div class="icons">
+                <i class="fa-solid fa-trash text-danger"></i>
+                <h5>Deleted</h5>
+            </div>
+            <p>10</p>
+
+        </div>
+
+    </section>
+    <!-- **Right section -->
+
+    <section class="right color2 ">
+        <!-- ^^ name  -->
+        <div class="header ">
+            <div class="titre">
+                <i class="fa-solid fa-house"></i>
+                <h5>Tâches</h5>
+            </div>
+            <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        <!-- ^^ theme -->
+        <div class="theme d-none ">
+            <h6>Theme</h6>
+            <div class="ligne1">
+                <div class="square gradi1"></div>
+                <div class="square gradi2"></div>
+                <div class="square gradi3"></div>
+                <div class="square gradi4"></div>
+            </div>
+            <div class="ligne1">
+                <div class="square color1"></div>
+                <div class="square color2"></div>
+                <div class="square color3"></div>
+                <div class="square color4"></div>
+            </div>
+            <div class="ligne1">
+                <div class="square img1"></div>
+                <div class="square img2"></div>
+                <div class="square img3"></div>
+                <div class="square img4"></div>
+            </div>
+            <div class="ligne1">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+
+        <!-- ^^ select -->
+        <div class="select_taches">
+            <select class="select" id="selecy">
+                <option value="All taches" id="all">All taches</option>
+                <option value="Done" id="done">Done</option>
+                <option value="wait" id="wait">waiting</option>
+                <option value="Deleted" id="deleted">Deleted</option>
+            </select>
+        </div>
+
+        <!-- ^^tasks -->
+        <div class="tasks ">
+            <div class="new-task">
+                <div class="task">
+                    <div class="name">
+                        <div class="check">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h1>New task</h1>
+                    </div>
+                    <div class="ideting">
+                        <i class="fa-solid fa-pen"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-solid fa-trash"></i>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
 
 
-    
+        <!-- ^^ add task -->
+
+        <div class="add">
+            <input type="text" placeholder="+ Ajoutez une tâche">
+        </div>
+    </section>
 
 
-<script type="module" src="./public/js/app.js"></script>
-<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> 
+
+
+    <script type="module" src="./public/js/app.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
